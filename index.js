@@ -28,7 +28,7 @@ function handleShoppingList(){
 
   $('.shopping-list').on('click', '.shopping-item-toggle', function(event){
     event.preventDefault();
-    $(this).closest('li').toggleClass('shopping-item__checked');
+    $(this).closest('li').children('.shopping-item').toggleClass('shopping-item__checked');
   });
 
 }
